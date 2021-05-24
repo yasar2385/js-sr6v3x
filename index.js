@@ -48,8 +48,12 @@ var person1 = {
         console.log(this.name);
     }
 };
-let f = person1.getName();
+let f = person1.getName;
 setTimeout(f, 1000);
+let ff = person1.getName();
+setTimeout(ff, 1000);
+let fff = person.getName();
+setTimeout(fff, 1000);
 
 var btn = document.getElementById('but');
 var button = document.getElementById('butt');
