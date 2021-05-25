@@ -43,16 +43,16 @@ function myFunction() {
   alert('I am an alert box!');
 }
 var person1 = {
-    name: 'John Doe',
-    getName: function() {
-        console.log(this.name);
-    }
+  name: 'John Doe',
+  getName: function() {
+    console.log(this.name);
+  }
 };
 let f = person1.getName;
 setTimeout(f, 1000);
 let ff = person1.getName();
 setTimeout(ff, 1000);
-let fff = person.getName();
+let fff = person1.getName();
 setTimeout(fff, 1000);
 
 var btn = document.getElementById('but');
