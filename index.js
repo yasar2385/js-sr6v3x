@@ -1,6 +1,23 @@
 // Import stylesheets
 import './style.css';
 
+
+//JavaScript closures
+function greeting() {
+    let message = 'Hi';
+
+    function sayHi() {
+        console.log(message);
+    }
+
+    return sayHi;
+}
+let hi = greeting();
+hi(); // still can access the message variable
+
+
+
+
 // Write Javascript code!
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
